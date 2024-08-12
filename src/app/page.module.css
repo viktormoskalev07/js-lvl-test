@@ -2,3 +2,11 @@
   padding: 100px;
 
 }
+
+
+.trim{
+  white-space: nowrap;        /* Запрещает перенос строк */
+  overflow: hidden;           /* Скрывает текст, выходящий за границы элемента */
+  text-overflow: ellipsis;    /* Добавляет троеточие для обрезанного текста */
+  width: 200px;
+}
