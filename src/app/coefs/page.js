@@ -10,7 +10,7 @@ export default function page() {
 
     const coef1= (Number(bet1)+Number(bet2))/Number(bet1) *0.9;
     const coef2= (Number(bet1)+Number(bet2))/Number(bet2)*0.9;
-    console.log(bet1 ,bet2 ,  bet2)
+
     let isFake = false
     if(coef1 < 1.01 || coef2 < 1.01 ||coef1>10**10 ||coef2>10**10 || isNaN(coef2)||isNaN(coef1)){
         isFake=true
