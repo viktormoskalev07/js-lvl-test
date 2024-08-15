@@ -1,0 +1,36 @@
+.text{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position:relative;
+  top: calc(50vh - 150px);
+  background: linear-gradient(green , yellow);
+  padding: 40px;
+ transition:1s;
+
+
+
+}
+
+.main{
+  background: linear-gradient(red , blue);
+  height: 100vh;
+}
+
+
+ .animated {
+   animation: maskAnimation 1s ease-in-out forwards reverse;
+ }
+
+$steps: 50;
+
+@keyframes maskAnimation {
+  @for $i from 0 through $steps {
+    $percent: ($i / $steps) * 100%;
+    $alpha: $i / $steps;
+
+    #{$percent} {
+      mask-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, $alpha));
+    }
+  }
+}

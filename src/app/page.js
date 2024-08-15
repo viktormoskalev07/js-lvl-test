@@ -4,7 +4,8 @@ import Link from "next/link";
 
 const pages = [
     "promises",
-    "coefs"
+    "coefs",
+    "text-transitions"
 
 ]
 
