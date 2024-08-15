@@ -19,10 +19,10 @@
 
 
  .animated {
-   animation: maskAnimation 1s ease-in-out forwards reverse;
+   animation: maskAnimation 500ms ease-in-out forwards reverse;
  }
 
-$steps: 50;
+$steps: 20;
 
 @keyframes maskAnimation {
   @for $i from 0 through $steps {
