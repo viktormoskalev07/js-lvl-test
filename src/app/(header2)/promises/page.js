@@ -1,7 +1,7 @@
 "use client"
 
-import styles from "../page.module.css";
-import {showModal} from "@/app/promises/notify/modalManager";
+import styles from "../../page.module.css";
+import {showModal} from "@/app/(header2)/promises/notify/modalManager";
 import {useState} from "react";
 
 const pages = [

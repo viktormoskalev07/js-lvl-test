@@ -1,12 +1,12 @@
-import Image from "next/image";
+"use client"
 import styles from "./page.module.css";
 import Link from "next/link";
 
 const pages = [
     "promises",
     "coefs",
-    "text-transitions"
-
+    "text-transitions",
+    "img-editor"
 ]
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       <div className={styles.description}>
           <nav>
             {
-              pages.map((item)=>{
-                return <div> <Link key={item} href={"/"+item}>{item}</Link></div>
+              pages.map((item , i )=>{
+                return <div key={i}> <Link  href={"/"+item}>{item}</Link></div>
               })
             }
 
