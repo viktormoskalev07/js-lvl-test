@@ -111,7 +111,7 @@ const Card = ({name, realCoef, bet, setBet, isEmpty, opponentBet ,maxBet}) => {
                         return <></>
                     }
                     return <button onClick={() => {
-                        setBet(p => p + item)
+                        setBet(p =>Number( p) + Number(fixed))
                     }} style={{fontSize: 16, padding: 10, margin: 5}} key={key}>{fixed}</button>
                 })}
             </div>
