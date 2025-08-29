@@ -1,7 +1,7 @@
 "use client"
 
 import styles from "./styles.module.scss";
-import {showModal} from "@/app/(header2)/promises/notify/modalManager";
+
 import {useState} from "react";
 
 

@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {customStore, textStore} from "./customStore";
+import {customStore} from "./customStore";
 
 
 export const Interval=()=>{

@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import {customStore, textStore} from "./customStore";
+import {customStore} from "./customStore";
 import {Interval} from "./interval";
 
 

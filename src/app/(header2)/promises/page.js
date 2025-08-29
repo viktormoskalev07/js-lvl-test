@@ -1,7 +1,6 @@
 "use client"
 
 import styles from "../../page.module.css";
-import {showModal} from "@/app/(header2)/promises/notify/modalManager";
 import {useState} from "react";
 
 const pages = [
@@ -41,7 +40,7 @@ export default function page() {
     const handleShowModal = async () => {
         setResult("")
         try{
-           await showModal('А вы уверены?');
+
            setResult("привет")
         }catch (e){
             setResult("отказ")
