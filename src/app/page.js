@@ -6,12 +6,19 @@ const pages = [
     "promises",
     "coefs",
     "text-transitions",
-    "img-editor"
+    "img-editor",
+    "effect-render",
+    "hook-vs-component",
+    "custom-store",
+    "effect-deps",
+    "memo-effect",
 ]
 
 export default function Home() {
+
   return (
     <main className={styles.main}>
+
       <div className={styles.description}>
           <nav>
             {
@@ -19,7 +26,6 @@ export default function Home() {
                 return <div key={i}> <Link  href={"/"+item}>{item}</Link></div>
               })
             }
-
           </nav>
       </div>
     </main>
